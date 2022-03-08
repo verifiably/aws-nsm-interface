@@ -7,12 +7,12 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="aws-nsm-interface",
     version="1.0.0",
-    author="Luc van Donkersgoed",
-    author_email="lucvandonkersgoed+python@gmail.com",
+    author="Verifiably",
+    author_email="atul@verifiably.com",
     description="Native Python interface for the AWS Nitro Secure Module (NSM)",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/donkersgoed/aws-nsm-interface",
+    url="https://github.com/verifiably/aws-nsm-interface-verifiably",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
