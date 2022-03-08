@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="aws-nsm-interface",
+    name="aws-nsm-interface-verifiably",
     version="1.0.0",
     author="Verifiably",
     author_email="atul@verifiably.com",
