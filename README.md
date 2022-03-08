@@ -3,10 +3,10 @@
 This library offers a native Python interface to the `/dev/nsm` device in AWS Nitro Enclaves. This is an updated version from [aws-nsm-interface](https://github.com/donkersgoed/aws-nsm-interface).
 
 ## Installation
-To install `aws_nsm_interface`, run:
+To install `aws_nsm_interface_verifiably`, run:
 
 ```
-pip install aws_nsm_interface
+pip install aws_nsm_interface_verifiably
 ```
 
 ### Requirements
