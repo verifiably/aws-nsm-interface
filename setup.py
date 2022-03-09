@@ -4,11 +4,15 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+
+VERSION = '1.0.1'
+
+
 setuptools.setup(
     name="aws-nsm-interface-verifiably",
-    version="1.0.0",
+    version=VERSION,
     author="Verifiably",
-    author_email="atul@verifiably.com",
+    author_email="contact@verifiably.com",
     description="Native Python interface for the AWS Nitro Secure Module (NSM)",
     long_description=long_description,
     long_description_content_type="text/markdown",

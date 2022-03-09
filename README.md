@@ -16,23 +16,23 @@ pip install aws_nsm_interface_verifiably
 ## Quickstart
 ```python
 import base64
-import aws_nsm_interface
+import aws_nsm_interface_verifiably
 
-file_desc = aws_nsm_interface.open_nsm_device()
+file_desc = aws_nsm_interface_verifiably.open_nsm_device()
 
-rand_bytes = aws_nsm_interface.get_random(file_desc, 12) # Get 12 random bytes from /dev/nsm
+rand_bytes = aws_nsm_interface_verifiably.get_random(file_desc, 12) # Get 12 random bytes from /dev/nsm
 print(rand_bytes)
 
 public_rsa_key = b'1234' # An RSA public key exported as DER
 
-attestation_doc = aws_nsm_interface.get_attestation_doc(
+attestation_doc = aws_nsm_interface_verifiably.get_attestation_doc(
     file_desc,
     public_key=public_rsa_key
 )['document']
 
 attestation_doc_b64 = base64.b64encode(attestation_doc).decode('utf-8')
 
-aws_nsm_interface.close_nsm_device(file_desc)
+aws_nsm_interface_verifiably.close_nsm_device(file_desc)
 
 # Use `attestation_doc_b64` in your AWS KMS Decrypt call
 ```
